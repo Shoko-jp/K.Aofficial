@@ -1,0 +1,583 @@
+
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url('font-awesome.css');
+/* ==== overwrite bootstrap standard ==== */
+@import url('animate.css');
+
+
+
+body {
+	font-family:'Open Sans', Arial, sans-serif;
+	font-size:14px;
+	font-weight:300;
+	line-height:1.6em;
+	color:#fff;
+	background-color:#fff;
+	overflow-x:hidden;
+}
+
+
+h1 {
+  padding: 10px;
+  color: #fff;
+  line-height:2em;
+  font-weight: lighter;
+  text-shadow: 2px 2px 1px #333;
+}
+
+h2{
+  padding: 8px;
+  color: #fff;
+  background: #272727;
+  line-height:1.1em;
+  font-weight: lighter;
+}
+
+h3,h4{
+	color:#272727;
+	line-height:1.1em;
+}
+
+p {
+	color:#aaa;
+	font-size:15px;
+}
+a {
+    text-decoration:none;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    outline: none;
+	color:#272727;
+}
+a:hover {
+	text-decoration: none;
+	color:#aaa;	
+	}
+
+/*===========================
+  Menu and Navigation
+============================ */
+header{
+  position: fixed;
+  z-index: 10; 
+  top: 0; 
+  width: 100%;
+}
+
+
+.navbar-brand {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-default {
+  background-color: #272727;
+  border-color: #e7e7e7;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding: 0 0 0 15px;
+  }
+
+  h1{
+  	margin-top: 50px;
+  	font-size: 24px;
+  }
+}
+
+.menu {
+	font-size:12px;
+	float:right;
+	text-transform:uppercase;
+	font-weight:600;	
+}
+
+.navbar-collapse {
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 0px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+
+.menu ul.nav-tabs li {
+	color:#fff;	
+  background: #272727;
+}
+
+.nav-tabs {
+	border-bottom: 0;
+}
+.nav-tabs > li {
+	float: left;
+	margin-bottom: 0;
+}
+
+.nav-tabs > li > a {	
+	border-radius:0;
+	color:#fff;
+	padding:30px;
+}
+
+.nav-tabs > li > a:hover {
+	color:#272727;
+	background: #eee;	
+  letter-spacing: 4px;
+} 
+
+/*===========================
+  slider
+============================ */
+.slider {
+	position: relative;	
+	margin-top:-20px;
+}
+
+.slider img {
+  margin-top: 72px;
+    width: 100%;
+}
+
+
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	top: calc(50% - 150px);
+	font-size:40px;
+	left: 15%;
+	z-index: 10;
+	padding-bottom: 0px;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+.carousel-caption  p {
+	font-size:30px;
+	margin-top:30px;
+	margin-bottom:20px;
+	color:#fff;
+	padding:10px;
+	background:#65AAF0;
+}
+
+@media (max-width: 767px) {
+    .carousel-caption  {
+      font-size: 18px;
+    }
+    .carousel-caption h2, .carousel-caption  h2 span, .carousel-caption  p {
+    	font-size:18px;
+    }
+}
+
+.carousel-inner .form-inline .form-group button[type="livedemo"]{
+	padding:20px 60px;
+	font-size:20px;
+	background:#65AAF0;
+	color:#fff;
+	border-radius:0;
+	border-color:#fff;
+	text-transform:uppercase;
+}
+
+.carousel-inner .form-inline .form-group button[type="livedemo"]:hover {
+	color:#272727;
+	opacity: 0.8;
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.carousel-inner .form-inline .form-group button[type="getnow"]{
+	padding:20px 60px;
+	font-size:20px;
+	background:#fff;
+	color:#272727;
+	border-radius:0;
+	text-transform:uppercase;
+	border: 1px solid #fff;
+}
+
+.carousel-inner .form-inline .form-group button[type="getnow"]:hover {
+	color:#fff;
+	border-color:#fff;
+	background:#65AAF0;
+	-webkit-transition: color 300ms, background-color 300ms;
+  -moz-transition: color 300ms, background-color 300ms;
+  -o-transition:  color 300ms, background-color 300ms;
+  transition:  color 300ms, background-color 300ms;
+}
+
+.form-inline {
+	margin-top:50px;	
+}
+
+
+
+/*===========================
+  gallery
+============================ */
+
+.gallery {
+	padding:50px 0;
+  background: #272727;
+}
+
+.gallery .text-center h2 {
+	text-transform:uppercase;
+	font-weight:550;
+	font-size:24px;
+	margin-bottom:30px;
+}
+
+.gallery figure {
+	position: relative;	
+	margin-top:30px;
+	margin-bottom:30px;
+	background: #272727;
+	text-align: center;
+	cursor: pointer;
+}
+
+.gallery figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+
+.gallery figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.gallery figure figcaption::before,
+.gallery figure figcaption::after {
+	pointer-events: none;
+}
+
+/*-----------------------------*/
+/***** Singapore photo *****/
+/*-----------------------------*/
+
+figure.effect-marley figcaption {
+	text-align: right;
+}
+
+figure.effect-marley h4,
+figure.effect-marley p {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+	bottom: 30px;
+	color:#fff;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-marley h4 {
+	top: 30px;
+	color:#fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h4 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h4::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h4::after,
+figure.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h4::after,
+figure.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+/*===========================
+  action
+============================ */
+
+.action {
+  overflow: visible;
+  padding: 0px;
+  width: 100;
+  background: #f2f2f2;
+  position: relative;
+}
+.action .left-text {
+  padding: 70px 0;
+  padding-right: 60px;
+  width: 50%;
+}
+.action .left-text h4 {
+  letter-spacing: 1px;
+}
+.action .left-text p {
+  padding-top: 20px;
+}
+
+.action .right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/14.jpg);
+}
+
+
+
+
+
+
+/*===========================
+  about
+============================ */
+
+.about {
+	padding:80px 0 20px 0;
+}
+
+.about .text-center h2 {
+	font-weight:550;
+	font-size:24px;
+}
+
+.about .text-center p {
+	margin-top:20px;
+	margin-bottom:80px;
+	color:#aaa;
+} 
+
+.prof{
+	text-align: left;
+}
+
+.center span {
+	color:#E8CE0E;
+}
+
+#about-us {
+	margin-bottom:50px;
+}
+
+#about-us .text-center h2 {
+	text-transform:uppercase;
+	font-weight:550;
+	font-size:24px;
+	margin-bottom:30px;
+}
+
+
+.bloglink{
+	position: relative;
+	display: inline-block;
+	padding: .65em 4em;
+	border: 2px solid #333;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.bloglink::after {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: -1;
+	content: '';
+	width: 101%;
+	height: 105%;
+	background-color: #e7e7e7;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.bloglink:hover {
+	color: #fff;
+}
+.bloglink:hover::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*===========================
+  WORK
+============================ */
+
+.work {
+	padding:80px 0 80px 0;
+}
+
+.work .text-center h2 {
+	font-weight:300;
+	text-shadow:none;
+	margin-bottom:50px;
+	font-size:24px;
+}
+
+.work i {
+	margin-top:20px;
+	margin-bottom:10px;
+	font-size:50px;
+	color:#ddd;
+}
+
+.work h3 {
+	margin-bottom:20px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+ }
+
+
+
+
+/*===========================
+  Contact
+============================ */
+.contact {
+  padding:80px 0 20px 0;
+  background:#fff;
+}
+
+.contact p {
+  margin-top: 32px;
+  color:#272727;
+}
+
+/*===========================
+  Footer
+============================ */
+
+footer  {
+  background:#272727;
+  padding:30px 0;
+}
+
+footer h4 {
+	margin-bottom:30px;
+	text-transform:uppercase;
+	text-shadow:none;
+	font-weight:550;
+	color:#272727;
+}
+
+.widget {
+  padding-left: 0;
+}
+
+ /*=========================================================
+	instagram
+=========================================================*/
+
+.insta_btn2{/*ボタンの下地*/
+  color: #FFF;/*文字・アイコン色*/
+  position: relative;
+  display: inline-block;
+  height: 40px;/*高さ*/
+  width: 176px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 16px;/*文字のサイズ*/
+  letter-spacing: 1px;
+  line-height: 40px;/*高さと合わせる*/
+  vertical-align: middle;/*垂直中央寄せ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration: none;/*下線は消す*/
+}
+
+.insta_btn2:before{/*グラデーション②*/
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;/*全体を覆う*/
+  height: 100%;/*全体を覆う*/
+  background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.insta_btn2 .fa-instagram{/*アイコン*/
+	padding-right: 0.5em;
+  font-size: 30px;/*アイコンサイズ*/
+  position: relative;
+  top: 4px;/*アイコン位置の微調整*/
+}
+
+.insta_btn2 span {/*テキスト*/
+  display:inline-block;
+  position: relative;
+  transition: .5s
+}
+
+.insta_btn2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+/*=============================================*/
+
+.copyright {
+	margin-top:30px;
+  text-align: right;
+}
+
+.copyright a {
+	color:#fff;
+	font-weight:600;
+	font-size:12px;
+	text-shadow:none;
+} 
